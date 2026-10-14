@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Projets | Sokhna Maï Sylla — Étudiante en Informatique & Dév</title>
+    <meta name="description"
+        content="Découvrez les projets de Sokhna Maï Sylla : le Projet RIZAO avec la plateforme Mlouma, des sites vitrines, e-commerce et applications web responsives.">
+
+    <!-- Google Fonts : Playfair Display + Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar container" aria-label="Navigation principale">
+            <a href="../index.html" class="navbar-brand" aria-label="Accueil Sokhna Maï Sylla">
+                <span class="brand-badge">SMS</span>
+                <span class="brand-text">
+                    <span class="brand-name">Sokhna Maï</span>
+                    <span class="brand-sub">Informatique & Dév</span>
+                </span>
+            </a>
+
+            <div class="navbar-menu" id="navbarMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="apropos.html" class="nav-link">À propos</a></li>
+                    <li><a href="formation.html" class="nav-link">Formation</a></li>
+                    <li><a href="projets.html" class="nav-link active">Projets</a></li>
+                    <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                    <li><a href="../assets/CV_Sokhna_Mai_Sylla.pdf" class="nav-link" target="_blank" download="CV_Sokhna_Mai_Sylla.pdf">CV</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-cta-mobile">
+                    <a href="../assets/CV_Sokhna_Mai_Sylla.pdf" class="btn btn-secondary btn-sm" target="_blank" download="CV_Sokhna_Mai_Sylla.pdf">
+                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                        <span>Télécharger mon CV</span>
+                    </a>
+                    <a href="contact.html" class="btn btn-primary btn-sm">
+                        <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+                        <span>Me contacter</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-actions">
+                <button type="button" class="theme-toggle-btn" id="themeToggle" aria-label="Changer le thème"
+                    title="Basculer entre mode clair et mode sombre">
+                    <i class="fa-solid fa-moon theme-icon-dark" aria-hidden="true"></i>
+                    <i class="fa-solid fa-sun theme-icon-light" aria-hidden="true"></i>
+                </button>
+
+                <a href="../assets/CV_Sokhna_Mai_Sylla.pdf" class="btn btn-secondary btn-sm nav-cv-btn"
+                    target="_blank" download="CV_Sokhna_Mai_Sylla.pdf" title="Télécharger mon CV (PDF)">
+                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                    <span>Mon CV</span>
+                </a>
+
+                <a href="contact.html" class="btn btn-primary btn-sm nav-cta-desktop">
+                    <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+                    <span>Contact</span>
+                </a>
+
+                <button type="button" class="navbar-hamburger" id="navbarToggle" aria-expanded="false"
+                    aria-controls="navbarMenu" aria-label="Ouvrir le menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- EN-TÊTE DE PAGE -->
+        <header class="page-intro-header">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <a href="../index.html">Accueil</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span>Projets & Réalisations</span>
+                </div>
+                <h1 class="page-intro-title">Mes <span class="gradient-text">Projets</span></h1>
+                <p class="page-intro-desc">
+                    De l'accompagnement des producteurs avec le projet RIZAO et la plateforme Mlouma au développement de solutions web interactives.
+                </p>
+            </div>
+        </header>
+
+        <!-- SECTION PROJETS COMPLÈTE AVEC FILTRES -->
+        <section class="section-block">
+            <div class="container">
+
+                <!-- Barre de Filtres Interactifs -->
+                <div class="project-filter-bar">
+                    <button type="button" class="filter-chip active" data-filter="all">Tous les projets</button>
+                    <button type="button" class="filter-chip" data-filter="terrain">Projet RIZAO & Accompagnement</button>
+                    <button type="button" class="filter-chip" data-filter="vitrine">Sites Vitrines</button>
+                    <button type="button" class="filter-chip" data-filter="ecommerce">E-Commerce</button>
+                </div>
+
+                <div class="projects-cards-grid">
+
+                    <!-- PROJET VEDETTE : RIZAO -->
+                    <article class="project-featured-card" data-category="terrain">
+                        <div class="featured-project-badge">
+                            <i class="fa-solid fa-star"></i> Projet Phare &bull; Accompagnement Terrain
+                        </div>
+                        <div class="featured-project-grid">
+                            <div class="featured-img-col">
+                                <img src="../assets/images/rizao-mockup.jpg"
+                                    alt="Projet RIZAO & Plateforme Mlouma" class="featured-project-img">
+                            </div>
+                            <div class="featured-content-col">
+                                <div class="project-tech-tags">
+                                    <span class="tech-tag">Plateforme Mlouma</span>
+                                    <span class="tech-tag">Projet RIZAO</span>
+                                    <span class="tech-tag">Accompagnement Usagers</span>
+                                    <span class="tech-tag">AgriTech</span>
+                                </div>
+                                <h2 class="featured-project-name">RIZAO &mdash; Plateforme Mlouma</h2>
+                                <p class="featured-project-desc">
+                                    Participation au projet RIZAO, qui avait notamment pour objectif de permettre aux producteurs de mieux comprendre et utiliser la plateforme Mlouma.
+                                </p>
+
+                                <div class="project-role-box">
+                                    <strong><i class="fa-solid fa-user-check"></i> Mon rôle et contribution :</strong>
+                                    <span>Sensibilisation et accompagnement pas-à-pas des producteurs sur le terrain pour faciliter la prise en main de la plateforme Mlouma.</span>
+                                </div>
+
+                                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                    <a href="https://www.mlouma.sn/auth/login" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                                        <span>Voir la plateforme</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJET 1 : Tableware Sokhna -->
+                    <article class="project-card" data-category="ecommerce">
+                        <div class="project-thumb-box">
+                            <img src="https://images.unsplash.com/photo-1615865417236-d67f57a3e2a4?auto=format&fit=crop&w=700&q=80"
+                                alt="Tableware Sokhna — Site de vente de vaisselle" class="project-thumb-img" loading="lazy">
+                            <span class="project-category-badge">E-Commerce</span>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <h3 class="project-card-title">Tableware Sokhna</h3>
+                            <p class="project-card-desc">
+                                Site web moderne de vente en ligne de vaisselle et d'accessoires de cuisine avec présentation soignée et catalogue interactif.
+                            </p>
+                            <div class="project-role-snippet">
+                                <strong>Présentation :</strong> E-commerce d'art de la table et accessoires culinaires.
+                            </div>
+                            <div class="project-card-footer">
+                                <a href="https://sokhna-oss.github.io/Tableware-by-SOKHNA/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                    <span>Voir le projet</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJET 2 : Immobilier Web -->
+                    <article class="project-card" data-category="vitrine">
+                        <div class="project-thumb-box">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=700&q=80"
+                                alt="Immobilier Web" class="project-thumb-img" loading="lazy">
+                            <span class="project-category-badge">Immobilier</span>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                            <h3 class="project-card-title">Immobilier Web</h3>
+                            <p class="project-card-desc">
+                                Site web dédié à l'immobilier permettant de présenter des biens immobiliers de manière professionnelle.
+                            </p>
+                            <div class="project-role-snippet">
+                                <strong>Présentation :</strong> Plateforme de présentation d'annonces et biens immobiliers.
+                            </div>
+                            <div class="project-card-footer">
+                                <a href="https://mai157823.github.io/immobilier-web/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                    <span>Voir le projet</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJET 3 : Location de matériel événementiel -->
+                    <article class="project-card" data-category="vitrine">
+                        <div class="project-thumb-box">
+                            <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=700&q=80"
+                                alt="Location de matériel événementiel" class="project-thumb-img" loading="lazy">
+                            <span class="project-category-badge">Événementiel</span>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Vercel</span>
+                            </div>
+                            <h3 class="project-card-title">Location de matériel événementiel</h3>
+                            <p class="project-card-desc">
+                                Site web professionnel consacré à la location de matériel pour événements, fêtes et cérémonies.
+                            </p>
+                            <div class="project-role-snippet">
+                                <strong>Présentation :</strong> Catalogue en ligne d'équipements événementiels.
+                            </div>
+                            <div class="project-card-footer">
+                                <a href="https://exercice-antigravity.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                    <span>Voir le projet</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-col">
+                <a href="../index.html" class="footer-logo">
+                    <span class="brand-badge">SMS</span>
+                    <span class="brand-name">SOKHNA MAÏ SYLLA</span>
+                </a>
+                <p class="footer-bio-short">
+                    Étudiante en Informatique & Développement d’Applications (IDA) à l'UNCHK.
+                </p>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-col-title">Navigation</h4>
+                <ul class="footer-nav-list">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="formation.html">Formation universitaire</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-col-title">Documents</h4>
+                <ul class="footer-nav-list">
+                    <li><a href="../assets/CV_Sokhna_Mai_Sylla.pdf" target="_blank" download="CV_Sokhna_Mai_Sylla.pdf">Télécharger mon CV</a></li>
+                    <li><a href="contact.html">Formulaire de contact</a></li>
+                    <li><a href="mailto:sokhnamai.sylla@unchk.edu.sn">sokhnamai.sylla@unchk.edu.sn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="container footer-bottom-inner">
+                <p class="copyright-p">&copy; 2026 <strong>Sokhna Maï Sylla</strong>. Tous droits réservés.</p>
+                <div class="footer-back-to-top">
+                    <a href="#main-content" class="back-to-top-btn"><i class="fa-solid fa-arrow-up"></i> Haut de page</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js" defer></script>
+</body>
+
+</html>

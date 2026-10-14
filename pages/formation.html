@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Formations | Sokhna Maï Sylla — Étudiante en Informatique & Dév</title>
+    <meta name="description"
+        content="Cursus universitaire et formations complémentaires de Sokhna Maï Sylla : Licence 2 IDA à l'UNCHK, Bac S2, Formation Linekode et Bureautique.">
+
+    <!-- Google Fonts : Playfair Display + Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar container" aria-label="Navigation principale">
+            <a href="../index.html" class="navbar-brand" aria-label="Accueil Sokhna Maï Sylla">
+                <span class="brand-badge">SMS</span>
+                <span class="brand-text">
+                    <span class="brand-name">Sokhna Maï</span>
+                    <span class="brand-sub">Informatique & Dév</span>
+                </span>
+            </a>
+
+            <div class="navbar-menu" id="navbarMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="apropos.html" class="nav-link">À propos</a></li>
+                    <li><a href="formation.html" class="nav-link active">Formation</a></li>
+                    <li><a href="projets.html" class="nav-link">Projets</a></li>
+                    <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                    <li><a href="../assets/CV_Sokhna_Mai_Sylla.pdf" class="nav-link" target="_blank" download="CV_Sokhna_Mai_Sylla.pdf">CV</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-cta-mobile">
+                    <a href="../assets/CV_Sokhna_Mai_Sylla.pdf" class="btn btn-secondary btn-sm" target="_blank" download="CV_Sokhna_Mai_Sylla.pdf">
+                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                        <span>Télécharger mon CV</span>
+                    </a>
+                    <a href="contact.html" class="btn btn-primary btn-sm">
+                        <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+                        <span>Me contacter</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-actions">
+                <button type="button" class="theme-toggle-btn" id="themeToggle" aria-label="Changer le thème"
+                    title="Basculer entre mode clair et mode sombre">
+                    <i class="fa-solid fa-moon theme-icon-dark" aria-hidden="true"></i>
+                    <i class="fa-solid fa-sun theme-icon-light" aria-hidden="true"></i>
+                </button>
+
+                <a href="../assets/CV_Sokhna_Mai_Sylla.pdf" class="btn btn-secondary btn-sm nav-cv-btn"
+                    target="_blank" download="CV_Sokhna_Mai_Sylla.pdf" title="Télécharger mon CV (PDF)">
+                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                    <span>Mon CV</span>
+                </a>
+
+                <a href="contact.html" class="btn btn-primary btn-sm nav-cta-desktop">
+                    <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+                    <span>Contact</span>
+                </a>
+
+                <button type="button" class="navbar-hamburger" id="navbarToggle" aria-expanded="false"
+                    aria-controls="navbarMenu" aria-label="Ouvrir le menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- EN-TÊTE DE PAGE -->
+        <header class="page-intro-header">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <a href="../index.html">Accueil</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span>Formations universitaires & complémentaires</span>
+                </div>
+                <h1 class="page-intro-title">Mes <span class="gradient-text">Formations</span></h1>
+                <p class="page-intro-desc">
+                    Un cursus universitaire spécialisé en Informatique et Développement d'Applications complété par des programmes pratiques et certifiants.
+                </p>
+            </div>
+        </header>
+
+        <!-- 1. PARCOURS UNIVERSITAIRE DÉTAILLÉ -->
+        <section class="section-block">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Cursus Académique</span>
+                    <h2 class="section-title">Mon Parcours <span class="gradient-text">Universitaire</span></h2>
+                    <p class="section-subtitle">
+                        Une formation d'excellence axée sur le génie logiciel, la modélisation des données et la création d'applications web et mobiles.
+                    </p>
+                </div>
+
+                <div class="academic-highlight-grid">
+                    <!-- UNCHK L2 IDA -->
+                    <div class="academic-card featured">
+                        <div class="academic-badge-row">
+                            <span class="academic-badge"><i class="fa-solid fa-award"></i> Formation Universitaire en cours</span>
+                            <span class="academic-period">2024 — Présent</span>
+                        </div>
+                        <h3 class="academic-degree">Licence en Informatique et Développement d’Applications (IDA)</h3>
+                        <h4 class="academic-institution">
+                            <i class="fa-solid fa-university"></i> Université Numérique Cheikh Hamidou Kane (UNCHK)
+                        </h4>
+                        <p class="academic-desc">
+                            La filière <strong>IDA (Informatique et Développement d'Applications)</strong> forme des professionnels compétents dans la conception, le développement, le déploiement et la maintenance de solutions logicielles et d'applications modernes.
+                        </p>
+
+                        <div class="academic-pillars">
+                            <h5 class="pillars-title"><i class="fa-solid fa-book-open"></i> Principales connaissances et compétences acquises :</h5>
+                            <div class="pillars-grid">
+                                <div class="pillar-box">
+                                    <i class="fa-solid fa-code"></i>
+                                    <h6>Génie Logiciel & Dév Web</h6>
+                                    <p>Architecture applicative, HTML5, CSS3, JavaScript, modularité et standards W3C.</p>
+                                </div>
+                                <div class="pillar-box">
+                                    <i class="fa-solid fa-database"></i>
+                                    <h6>Bases de Données Relationnelles</h6>
+                                    <p>Modélisation entité-association, requêtes SQL (sélection, jointures, groupements) et intégrité des données.</p>
+                                </div>
+                                <div class="pillar-box">
+                                    <i class="fa-solid fa-brain"></i>
+                                    <h6>Algorithmique Avancée</h6>
+                                    <p>Structures de données fondamentales (listes, piles, files), complexité et logique de programmation.</p>
+                                </div>
+                                <div class="pillar-box">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                    <h6>Méthodologie & Qualité</h6>
+                                    <p>Documentation technique, tests de validation et organisation rigoureuse du code.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="academic-footer">
+                            <span class="academic-status-text">
+                                <i class="fa-solid fa-circle-check text-success"></i> Étudiante assidue et engagée en Licence 2 (L2 IDA)
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Baccalauréat Scientifique S2 -->
+                    <div class="academic-card">
+                        <div class="academic-badge-row">
+                            <span class="academic-badge"><i class="fa-solid fa-check"></i> Diplôme d'État</span>
+                            <span class="academic-period">2024</span>
+                        </div>
+                        <h3 class="academic-degree">Baccalauréat Scientifique — Série S2</h3>
+                        <h4 class="academic-institution">
+                            <i class="fa-solid fa-school"></i> Enseignement Secondaire Général
+                        </h4>
+                        <p class="academic-desc">
+                            Obtention du baccalauréat scientifique (Série S2), sanctionnant un parcours centré sur les mathématiques et les sciences expérimentales. Cette formation apporte une rigueur de réflexion indispensable à la conception de logiciels.
+                        </p>
+
+                        <div class="academic-pillars">
+                            <h5 class="pillars-title"><i class="fa-solid fa-calculator"></i> Acquis fondamentaux :</h5>
+                            <ul class="academic-checklist">
+                                <li><i class="fa-solid fa-check-circle"></i> Logique formelle, raisonnement mathématique et analyse</li>
+                                <li><i class="fa-solid fa-check-circle"></i> Rigueur dans la formulation et la résolution d'équations</li>
+                                <li><i class="fa-solid fa-check-circle"></i> Esprit de synthèse et capacité de travail autonome</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. FORMATIONS COMPLÉMENTAIRES (LINEKODE & BUREAUTIQUE) -->
+        <section class="section-block bg-subtle" id="complementaires">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag"><i class="fa-solid fa-certificate"></i> Perfectionnement Pratique</span>
+                    <h2 class="section-title">Mes Formations <span class="gradient-text">Complémentaires</span></h2>
+                    <p class="section-subtitle">
+                        Des compléments stratégiques pour renforcer la pratique du code et la maîtrise des outils de bureautique professionnelle.
+                    </p>
+                </div>
+
+                <div class="complementary-grid">
+                    <!-- Formation Linekode -->
+                    <div class="complementary-card featured-border">
+                        <div class="comp-badge-top">
+                            <span class="comp-tag"><i class="fa-solid fa-star"></i> Formation Pratique Clé</span>
+                            <span class="comp-date"><i class="fa-regular fa-calendar"></i> [DATE]</span>
+                        </div>
+                        <div class="comp-header">
+                            <div class="comp-icon-wrapper">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div>
+                                <h3 class="comp-title">Formation Linekode</h3>
+                                <span class="comp-provider">Linekode &bull; Développement d'Applications</span>
+                            </div>
+                        </div>
+                        <p class="comp-desc">
+                            La formation <strong>Linekode</strong> constitue un tremplin pratique majeur dans mon cursus. Axée sur la réalisation concrète et le code moderne, elle m'a permis de transformer les concepts théoriques en projets fonctionnels et élégants.
+                        </p>
+
+                        <div class="comp-skills-section">
+                            <h4 class="comp-skills-title">Compétences développées chez Linekode :</h4>
+                            <div class="comp-skills-tags">
+                                <span class="skill-pill"><i class="fa-solid fa-code"></i> Développement informatique</span>
+                                <span class="skill-pill"><i class="fa-solid fa-layer-group"></i> Conception d'interfaces réactives</span>
+                                <span class="skill-pill"><i class="fa-solid fa-bug"></i> Résolution méthodique de bogues</span>
+                                <span class="skill-pill"><i class="fa-solid fa-terminal"></i> Workflow et pratiques professionnelles</span>
+                            </div>
+                        </div>
+
+                        <div class="comp-cert-box">
+                            <div class="cert-info">
+                                <i class="fa-solid fa-award cert-icon"></i>
+                                <div>
+                                    <span class="cert-title">Certificat Linekode</span>
+                                    <span class="cert-meta">[DATE D'OBTENTION / DISPONIBLE : [CERTIFICAT LINEKODE]]</span>
+                                </div>
+                            </div>
+                            <span class="badge-status-neutral">Certifié / En cours</span>
+                        </div>
+                    </div>
+
+                    <!-- Formation en Bureautique -->
+                    <div class="complementary-card">
+                        <div class="comp-badge-top">
+                            <span class="comp-tag"><i class="fa-solid fa-file-lines"></i> Productivité</span>
+                            <span class="comp-date"><i class="fa-regular fa-calendar"></i> [ANNÉE]</span>
+                        </div>
+                        <div class="comp-header">
+                            <div class="comp-icon-wrapper">
+                                <i class="fa-solid fa-desktop"></i>
+                            </div>
+                            <div>
+                                <h3 class="comp-title">Formation en Bureautique</h3>
+                                <span class="comp-provider">[ÉTABLISSEMENT] &bull; Suite Bureautique</span>
+                            </div>
+                        </div>
+                        <p class="comp-desc">
+                            Une formation approfondie consacrée aux outils de la suite Office pour assurer une rédaction de rapports irréprochable, une gestion rigoureuse des données chiffrées et des présentations visuelles de qualité.
+                        </p>
+
+                        <div class="bureautique-tools-list">
+                            <div class="b-tool-item">
+                                <div class="b-tool-icon doc"><i class="fa-solid fa-file-word"></i></div>
+                                <div class="b-tool-info">
+                                    <strong>Microsoft Word</strong>
+                                    <span>Mise en page complexe, styles hiérarchisés, tables des matières automatiques et documents professionnels.</span>
+                                </div>
+                            </div>
+
+                            <div class="b-tool-item">
+                                <div class="b-tool-icon sheet"><i class="fa-solid fa-file-excel"></i></div>
+                                <div class="b-tool-info">
+                                    <strong>Microsoft Excel</strong>
+                                    <span>Calculs matriciels, formules logiques, graphiques de synthèse et organisation de bases de données de suivi.</span>
+                                </div>
+                            </div>
+
+                            <div class="b-tool-item">
+                                <div class="b-tool-icon pres"><i class="fa-solid fa-file-powerpoint"></i></div>
+                                <div class="b-tool-info">
+                                    <strong>Microsoft PowerPoint</strong>
+                                    <span>Création de diaporamas percutants, synthèse visuelle et harmonie des supports de communication.</span>
+                                </div>
+                            </div>
+
+                            <div class="b-tool-item">
+                                <div class="b-tool-icon tools"><i class="fa-solid fa-folder-tree"></i></div>
+                                <div class="b-tool-info">
+                                    <strong>Organisation et Traitement de Documents</strong>
+                                    <span>Classement méthodique, archivage électronique, conversions sécurisées et gestion documentaire fiable.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a href="../assets/CV_Sokhna_Mai_Sylla.pdf" class="btn btn-primary" target="_blank" download="CV_Sokhna_Mai_Sylla.pdf">
+                        <i class="fa-solid fa-download"></i>
+                        <span>Télécharger mon CV complet en PDF</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-col">
+                <a href="../index.html" class="footer-logo">
+                    <span class="brand-badge">SMS</span>
+                    <span class="brand-name">SOKHNA MAÏ SYLLA</span>
+                </a>
+                <p class="footer-bio-short">
+                    Étudiante en Informatique & Développement d’Applications (IDA) à l'UNCHK.
+                </p>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-col-title">Navigation</h4>
+                <ul class="footer-nav-list">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="formation.html">Formation universitaire</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-col-title">Documents</h4>
+                <ul class="footer-nav-list">
+                    <li><a href="../assets/CV_Sokhna_Mai_Sylla.pdf" target="_blank" download="CV_Sokhna_Mai_Sylla.pdf">Télécharger mon CV</a></li>
+                    <li><a href="contact.html">Formulaire de contact</a></li>
+                    <li><a href="mailto:sokhnamai.sylla@unchk.edu.sn">sokhnamai.sylla@unchk.edu.sn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="container footer-bottom-inner">
+                <p class="copyright-p">&copy; 2026 <strong>Sokhna Maï Sylla</strong>. Tous droits réservés.</p>
+                <div class="footer-back-to-top">
+                    <a href="#main-content" class="back-to-top-btn"><i class="fa-solid fa-arrow-up"></i> Haut de page</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js" defer></script>
+</body>
+
+</html>

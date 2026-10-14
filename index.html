@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO & Métadonnées -->
+    <title>Sokhna Maï Sylla | Étudiante en Informatique & Développement d'Applications</title>
+    <meta name="description"
+        content="Portfolio professionnel de Sokhna Maï Sylla, Étudiante en Informatique et Développement d'Applications (IDA) à l'UNCHK. Découvrez mon parcours, mes formations, mes compétences et mes projets.">
+    <meta name="keywords"
+        content="Sokhna Maï Sylla, Informatique, Développement d'applications, UNCHK, IDA, RIZAO, Mlouma, Linekode, Portfolio, HTML, CSS, JavaScript, Bootstrap">
+    <meta name="author" content="Sokhna Maï Sylla">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sokhna Maï Sylla — Étudiante en Informatique & Développement d'Applications">
+    <meta property="og:description"
+        content="Passionnée par l'informatique et le développement d'applications, découvrez mon parcours universitaire, mes projets et mes compétences.">
+
+    <!-- Google Fonts : Playfair Display + Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Feuille de style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-home">
+
+    <!-- =========================================================================
+         1. NAVIGATION PRINCIPALE — ELEGANTE, ROSE & NOIR, RESPONSIVE
+         ========================================================================= -->
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar container" aria-label="Navigation principale">
+
+            <!-- Logo SMS — Typography Playfair Display -->
+            <a href="index.html" class="navbar-brand" aria-label="Accueil Sokhna Maï Sylla">
+                <span class="brand-sms-badge">SMS</span>
+                <span class="brand-divider" aria-hidden="true"></span>
+                <span class="brand-tagline">Sokhna Maï Sylla<br>Informatique &amp; Développement</span>
+            </a>
+
+            <!-- Liens de navigation centrés (Desktop) -->
+            <div class="navbar-menu" id="navbarMenu">
+                <ul class="nav-links" role="list">
+                    <li><a href="#hero" class="nav-link active" data-section="hero">Accueil</a></li>
+                    <li><a href="#about" class="nav-link" data-section="about">À propos</a></li>
+                    <li><a href="#competences" class="nav-link" data-section="competences">Compétences</a></li>
+                    <li><a href="#formations-complementaires" class="nav-link"
+                            data-section="formations-complementaires">Formation</a></li>
+                    <li><a href="#projets" class="nav-link" data-section="projets">Projets</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                </ul>
+
+                <!-- Liens pages dédiées (visible seulement en menu mobile) -->
+                <div class="nav-pages-dropdown" aria-label="Pages détaillées">
+                    <span class="nav-dropdown-title">Pages détaillées :</span>
+                    <div class="nav-dropdown-links">
+                        <a href="pages/apropos.html" class="nav-sublink"><i class="fa-solid fa-user"
+                                aria-hidden="true"></i> À propos</a>
+                        <a href="pages/formation.html" class="nav-sublink"><i class="fa-solid fa-graduation-cap"
+                                aria-hidden="true"></i> Formations</a>
+                        <a href="pages/projets.html" class="nav-sublink"><i class="fa-solid fa-diagram-project"
+                                aria-hidden="true"></i> Projets</a>
+                        <a href="pages/competences.html" class="nav-sublink"><i class="fa-solid fa-layer-group"
+                                aria-hidden="true"></i> Compétences</a>
+                        <a href="pages/contact.html" class="nav-sublink"><i class="fa-solid fa-envelope"
+                                aria-hidden="true"></i> Contact</a>
+                    </div>
+                </div>
+
+                <!-- Boutons mobile -->
+                <div class="nav-cta-mobile">
+                    <a href="assets/CV_Sokhna_Mai_Sylla.pdf" class="btn btn-secondary btn-sm" target="_blank"
+                        download="CV_Sokhna_Mai_Sylla.pdf" aria-label="Télécharger mon CV">
+                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                        <span>Télécharger mon CV</span>
+                    </a>
+                    <a href="#contact" class="btn btn-primary btn-sm">
+                        <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+                        <span>Me contacter</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Actions droite (Desktop) -->
+            <div class="navbar-actions">
+
+                <!-- Bouton changement de langue -->
+                <button type="button" class="lang-toggle-btn" id="langToggle"
+                    aria-label="Changer la langue du portfolio" title="Switch language / Changer la langue">
+                    <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                    <span id="langLabel">FR</span>
+                </button>
+
+                <!-- Bouton CV -->
+                <a href="assets/CV_Sokhna_Mai_Sylla.pdf" class="nav-cv-btn" target="_blank"
+                    download="CV_Sokhna_Mai_Sylla.pdf" title="Télécharger mon CV (PDF)" aria-label="Télécharger mon CV">
+                    <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+                    <span>Mon CV</span>
+                </a>
+
+                <!-- Bouton Hamburger Mobile -->
+                <button type="button" class="navbar-hamburger" id="navbarToggle" aria-expanded="false"
+                    aria-controls="navbarMenu" aria-label="Ouvrir le menu de navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- =========================================================================
+             2. HERO / ACCUEIL — BLANC PROPRE, MOTIF SUBTIL, PHOTO ÉLÉGANTE
+             ========================================================================= -->
+        <section class="hero-section" id="hero" aria-label="Présentation générale">
+
+            <!-- Motif SVG très discret en fond côté photo -->
+            <div class="hero-pattern-bg" aria-hidden="true">
+                <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Grille de points -->
+                    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+                        <circle cx="2" cy="2" r="1.5" fill="#0284c7" />
+                    </pattern>
+                    <rect width="500" height="500" fill="url(#dots)" />
+                    <!-- Cercles concentriques géométriques -->
+                    <circle cx="350" cy="200" r="140" stroke="#0284c7" stroke-width="0.8" fill="none" opacity="0.4" />
+                    <circle cx="350" cy="200" r="100" stroke="#0284c7" stroke-width="0.8" fill="none" opacity="0.3" />
+                    <circle cx="350" cy="200" r="60" stroke="#0284c7" stroke-width="0.8" fill="none" opacity="0.2" />
+                    <!-- Lignes diagonales fines -->
+                    <line x1="200" y1="0" x2="500" y2="300" stroke="#0284c7" stroke-width="0.5" opacity="0.3" />
+                    <line x1="250" y1="0" x2="500" y2="250" stroke="#0284c7" stroke-width="0.5" opacity="0.2" />
+                    <!-- Hexagone décoratif -->
+                    <polygon points="350,80 410,115 410,185 350,220 290,185 290,115" stroke="#0284c7" stroke-width="0.8"
+                        fill="none" opacity="0.25" />
+                </svg>
+            </div>
+
+            <div class="container hero-grid">
+                <!-- Colonne Texte -->
+                <div class="hero-text-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot" aria-hidden="true"></span>
+                        <span class="badge-label" id="hero-badge-label">Profil Académique &amp; Professionnel</span>
+                    </div>
+
+                    <p class="hero-name" id="hero-name-label">SOKHNA MAÏ SYLLA</p>
+
+                    <h1 class="hero-title" id="hero-title">
+                        Étudiante en <span class="gradient-text">Informatique &amp; Développement d'Applications</span>
+                    </h1>
+
+                    <p class="hero-description" id="hero-desc">
+                        Curieuse, créative et passionnée par l’informatique, je conçois des solutions numériques avec
+                        l’envie de créer, d’apprendre et de toujours aller plus loin.
+
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary btn-lg" id="hero-btn-about">
+                            <span>Découvrir mon profil</span>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="assets/CV_Sokhna_Mai_Sylla.pdf" class="btn btn-outline btn-lg" target="_blank"
+                            download="CV_Sokhna_Mai_Sylla.pdf" id="hero-btn-cv">
+                            <i class="fa-solid fa-download" aria-hidden="true"></i>
+                            <span>Télécharger mon CV</span>
+                        </a>
+                    </div>
+
+                    <!-- Points forts -->
+                    <div class="hero-highlights-row">
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <strong class="highlight-val">Licence 2 IDA</strong>
+                                <span class="highlight-sub">UNCHK &bull; Bac S2</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fa-solid fa-seedling" aria-hidden="true"></i></div>
+                            <div>
+                                <strong class="highlight-val">Projet RIZAO</strong>
+                                <span class="highlight-sub">Plateforme Mlouma</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
+                            <div>
+                                <strong class="highlight-val">Formation Linekode</strong>
+                                <span class="highlight-sub">Développement &amp; Bureautique</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colonne Photo avec motif et cadre élégant -->
+                <div class="hero-visual-content">
+                    <div class="hero-portrait-container">
+                        <!-- Anneaux organiques décoratifs (motif léger) -->
+                        <div class="portrait-pattern-ring" aria-hidden="true"></div>
+                        <!-- Points décoratifs -->
+                        <div class="portrait-dots" aria-hidden="true"></div>
+                        <div class="portrait-dots-bl" aria-hidden="true"></div>
+
+                        <!-- Cadre photo élégant -->
+                        <div class="portrait-frame">
+                            <img src="assets/images/CAP09570.jpg.jpeg" alt="Portrait professionnel de Sokhna Maï Sylla"
+                                class="portrait-img" width="450" height="640" loading="eager">
+                        </div>
+
+                        <!-- Badge flottant -->
+                        <div class="portrait-floating-card" aria-hidden="true">
+                            <div class="floating-icon">
+                                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                            </div>
+                            <div class="floating-content">
+                                <span class="floating-title">Motivation &amp; Rigueur</span>
+                                <span class="floating-subtitle">Passionnée de technologies web</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             3. SECTION À PROPOS — PHOTO GRANDE + RÉSUMÉ + 3 STATS
+             ========================================================================= -->
+        <section class="section-block bg-subtle" id="about" aria-label="À propos de moi">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Mon Identité</span>
+                    <h2 class="section-title">À <span class="gradient-text">Propos de Moi</span></h2>
+                </div>
+
+                <div class="about-layout">
+                    <!-- Colonne photo -->
+                    <div class="about-photo-col reveal">
+                        <div class="about-photo-wrapper">
+                            <div class="about-photo-decor" aria-hidden="true"></div>
+                            <div class="about-photo-decor-bl" aria-hidden="true"></div>
+                            <div class="about-photo-frame">
+                                <img src="assets/images/CAP09563.jpg"
+                                    alt="Sokhna Maï Sylla — Étudiante en Informatique et Développement d'Applications"
+                                    width="420" height="525" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Colonne contenu -->
+                    <div class="about-content-col">
+                        <p class="about-eyebrow reveal">Profil Professionnel</p>
+                        <h2 class="about-title reveal reveal-delay-1">
+                            Sokhna Maï Sylla<br>
+                            <span class="gradient-text">Développeuse web</span>
+                        </h2>
+
+                        <div class="about-bio-text reveal reveal-delay-2">
+                            <p>
+                                Étudiante en <strong>Licence IDA à l’UNCHK</strong>, je me spécialise en
+                                <strong>développement logiciel et technologies web</strong>.
+
+                            <p>
+                                Mon parcours repose sur une solide formation scientifique, enrichie par des compétences
+                                en <strong>développement</strong> et en <strong>bureautique</strong>.
+
+
+                            </p>
+                            <p>
+                                J’ai contribué à la sensibilisation des producteurs à l’utilisation de
+                                <strong>Mlouma</strong>, une expérience qui m’a permis de renforcer mes compétences en
+                                communication et en accompagnement.
+
+
+                            </p>
+                            <p>
+                                Je maîtrise <strong>HTML5, CSS3, JavaScript,GitHub,WordPress</strong> et
+                                <strong>Bootstrap</strong>, et je continue de progresser chaque jour vers mon objectif :
+                                devenir une développeuse d'applications compétente, créative et professionnelle.
+                            </p>
+                        </div>
+
+                        <!-- 3 Cartes statistiques -->
+                        <div class="about-stats-row">
+                            <div class="stat-card reveal reveal-delay-1">
+                                <span class="stat-index">01</span>
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Années d'expérience en développement web</span>
+                            </div>
+                            <div class="stat-card reveal reveal-delay-2">
+                                <span class="stat-index">02</span>
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Projets web réalisés</span>
+                            </div>
+                            <div class="stat-card reveal reveal-delay-3">
+                                <span class="stat-index">03</span>
+                                <span class="stat-number">2024</span>
+                                <span class="stat-label">Début du parcours en informatique</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             3. SECTION : COMPÉTENCES
+             ========================================================================= -->
+        <section class="section-block" id="competences" aria-label="Compétences">
+                                    <div class="container">
+                                        <div class="section-header text-center">
+                                            <span class="section-tag">Aptitudes &amp; Savoir-faire</span>
+                                            <h2 class="section-title">Mes <span class="gradient-text">Compétences</span>
+                                            </h2>
+                                            <p class="section-subtitle">
+                                                Une organisation par domaines précis avec des niveaux distincts
+                                                permettant d'apprécier mes maîtrises actuelles et mes axes de
+                                                progression.
+                                            </p>
+                                        </div>
+
+                                        <div class="competences-categories-grid">
+
+                                            <!-- Catégorie 1 : Développement Web & Frontend -->
+                                            <div class="comp-category-card reveal">
+                                                <div class="category-header">
+                                                    <div class="category-icon-box dev"><i class="fa-solid fa-code"
+                                                            aria-hidden="true"></i></div>
+                                                    <div>
+                                                        <h3 class="category-title">Développement Web</h3>
+                                                        <p class="category-sub">Technologies frontend &amp; intégration
+                                                            réactive</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="skills-list-detailed">
+                                                    <div class="skill-row">
+                                                        <div class="skill-info">
+                                                            <div class="skill-name-col">
+                                                                <i class="fa-brands fa-html5 text-orange"
+                                                                    aria-hidden="true"></i>
+                                                                <strong>HTML5</strong>
+                                                            </div>
+                                                            <span class="skill-badge-tag">Frontend</span>
+                                                        </div>
+                                                        <p class="skill-caption">Structuration sémantique rigoureuse,
+                                                            formulaires et conformité aux normes web.</p>
+                                                    </div>
+
+                                                    <div class="skill-row">
+                                                        <div class="skill-info">
+                                                            <div class="skill-name-col">
+                                                                <i class="fa-brands fa-css3-alt text-blue"
+                                                                    aria-hidden="true"></i>
+                                                                <strong>CSS3</strong>
+                                                            </div>
+                                                            <span class="skill-badge-tag">Style &amp; Layout</span>
+                                                        </div>
+                                                        <p class="skill-caption">Flexbox, CSS Grid, animations fluides,
+                                                            design responsive et variables CSS.</p>
+                                                    </div>
+
+                                                    <div class="skill-row">
+                                                        <div class="skill-info">
+                                                            <div class="skill-name-col">
+                                                                <i class="fa-brands fa-js text-yellow"
+                                                                    aria-hidden="true"></i>
+                                                                <strong>JavaScript</strong>
+                                                            </div>
+                                                            <span class="skill-badge-tag">Dynamique</span>
+                                                        </div>
+                                                        <p class="skill-caption">Manipulation du DOM, événements
+                                                            interactifs, logique ES6+ et programmation dynamique.</p>
+                                                    </div>
+
+                                                    <div class="skill-row">
+                                                        <div class="skill-info">
+                                                            <div class="skill-name-col">
+                                                                <i class="fa-brands fa-bootstrap" style="color:#7952b3;"
+                                                                    aria-hidden="true"></i>
+                                                                <strong>Bootstrap</strong>
+                                                            </div>
+                                                            <span class="skill-badge-tag">Framework CSS</span>
+                                                        </div>
+                                                        <p class="skill-caption">Grille responsive 12 colonnes,
+                                                            composants UI et intégration rapide d'interfaces.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Catégorie 2 : Outils, CMS & Déploiement -->
+                                            <div class="comp-category-card reveal reveal-delay-1">
+                                                <div class="category-header">
+                                                    <div class="category-icon-box info"><i
+                                                            class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h3 class="category-title">Outils &amp; Déploiement</h3>
+                                                        <p class="category-sub">Gestion de version, CMS &amp;
+                                                            hébergement web</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="skills-list-detailed">
+                                                    <div class="skill-row">
+                                                        <div class="skill-info">
+                                                            <div class="skill-name-col">
+                                                                <i class="fa-brands fa-github" style="color:#111111;"
+                                                                    aria-hidden="true"></i>
+                                                                <strong>GitHub</strong>
+                                                            </div>
+                                                            <span class="skill-badge-tag">Versioning</span>
+                                                        </div>
+                                                        <p class="skill-caption">Gestion de dépôts, hébergement de
+                                                            projets et versionnement de code source.</p>
+                                                    </div>
+
+                                                    <div class="skill-row">
+                                                        <div class="skill-info">
+                                                            <div class="skill-name-col">
+                                                                <i class="fa-brands fa-wordpress" style="color:#21759b;"
+                                                                    aria-hidden="true"></i>
+                                                                <strong>WordPress</strong>
+                                                            </div>
+                                                            <span class="skill-badge-tag">CMS</span>
+                                                        </div>
+                                                        <p class="skill-caption">Création et administration de sites
+                                                            web, gestion de contenus et extensions.</p>
+                                                    </div>
+
+                                                    <div class="skill-row">
+                                                        <div class="skill-info">
+                                                            <div class="skill-name-col">
+                                                                <i class="fa-solid fa-bolt"
+                                                                    style="color:var(--text-primary);"
+                                                                    aria-hidden="true"></i>
+                                                                <strong>Vercel</strong>
+                                                            </div>
+                                                            <span class="skill-badge-tag">Hébergement</span>
+                                                        </div>
+                                                        <p class="skill-caption">Déploiement continu et publication en
+                                                            ligne d'applications web modernes.</p>
+                                                    </div>
+
+                                                    <div class="skill-row">
+                                                        <div class="skill-info">
+                                                            <div class="skill-name-col">
+                                                                <i class="fa-solid fa-database"
+                                                                    style="color:var(--text-primary);"
+                                                                    aria-hidden="true"></i>
+                                                                <strong>Bases de données &amp; SQL</strong>
+                                                            </div>
+                                                            <span class="skill-badge-tag">Données</span>
+                                                        </div>
+                                                        <p class="skill-caption">Modélisation relationnelle, schémas
+                                                            entité-association et requêtes SQL.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Catégorie 3 : Informatique & Bureautique -->
+                                            <div class="comp-category-card reveal reveal-delay-2">
+                                                <div class="category-header">
+                                                    <div class="category-icon-box office"><i
+                                                            class="fa-solid fa-microchip" aria-hidden="true"></i></div>
+                                                    <div>
+                                                        <h3 class="category-title">Informatique &amp; Bureautique</h3>
+                                                        <p class="category-sub">Fondations scientifiques &amp;
+                                                            productivité</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="skills-list-detailed">
+                                                    <div class="skill-row">
+                                                        <div class="skill-info">
+                                                            <div class="skill-name-col">
+                                                                <i class="fa-solid fa-brain"
+                                                                    style="color:var(--text-primary);"
+                                                                    aria-hidden="true"></i>
+                                                                <strong>Algorithmique &amp; Logique</strong>
+                                                            </div>
+                                                            <span class="skill-badge-tag">Méthodologie</span>
+                                                        </div>
+                                                        <p class="skill-caption">Structures de données, résolution
+                                                            méthodique de problèmes et esprit d'analyse.</p>
+                                                    </div>
+
+                                                    <div class="skill-row">
+                                                        <div class="skill-info">
+                                                            <div class="skill-name-col">
+                                                                <i class="fa-solid fa-file-word text-blue"
+                                                                    aria-hidden="true"></i>
+                                                                <strong>Microsoft Word</strong>
+                                                            </div>
+                                                            <span class="skill-badge-tag">Bureautique</span>
+                                                        </div>
+                                                        <p class="skill-caption">Rédaction formelle, mise en page
+                                                            structurée et rapports académiques.</p>
+                                                    </div>
+
+                                                    <div class="skill-row">
+                                                        <div class="skill-info">
+                                                            <div class="skill-name-col">
+                                                                <i class="fa-solid fa-file-excel text-green"
+                                                                    aria-hidden="true"></i>
+                                                                <strong>Microsoft Excel</strong>
+                                                            </div>
+                                                            <span class="skill-badge-tag">Bureautique</span>
+                                                        </div>
+                                                        <p class="skill-caption">Formules mathématiques/logiques,
+                                                            tableaux de synthèse et organisation de données.</p>
+                                                    </div>
+
+                                                    <div class="skill-row">
+                                                        <div class="skill-info">
+                                                            <div class="skill-name-col">
+                                                                <i class="fa-solid fa-file-powerpoint text-orange"
+                                                                    aria-hidden="true"></i>
+                                                                <strong>Microsoft PowerPoint</strong>
+                                                            </div>
+                                                            <span class="skill-badge-tag">Présentation</span>
+                                                        </div>
+                                                        <p class="skill-caption">Conception de supports visuels clairs
+                                                            et présentations professionnelles.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="text-center mt-4">
+                                            <a href="pages/competences.html" class="btn btn-outline">
+                                                <span>Explorer toutes mes compétences</span>
+                                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- =========================================================================
+             4. SECTION : FORMATION
+             ========================================================================= -->
+                                <section class="section-block bg-subtle" id="formations-complementaires"
+                                    aria-label="Formation">
+                                    <div class="container">
+                                        <div class="section-header text-center">
+                                            <span class="section-tag">Parcours Académique &amp; Pratique</span>
+                                            <h2 class="section-title">Ma <span class="gradient-text">Formation</span>
+                                            </h2>
+                                            <p class="section-subtitle">
+                                                Des études universitaires en informatique enrichies par des
+                                                apprentissages ciblés pour approfondir mes compétences techniques en
+                                                développement et bureautique.
+                                            </p>
+                                        </div>
+
+                                        <!-- Licence IDA UNCHK -->
+                                        <div class="academic-highlight-card reveal mb-5"
+                                            style="margin-bottom: 2.5rem; background: var(--color-bg-card); border-radius: var(--radius-lg); padding: 2rem; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
+                                            <div class="academic-highlight-grid"
+                                                style="display: grid; grid-template-columns: 80px 1fr; gap: 1.5rem; align-items: center;">
+                                                <div class="academic-icon-box"
+                                                    style="width: 70px; height: 70px; border-radius: var(--radius-md); background: var(--color-forest-pale); color: var(--color-forest); display: flex; align-items: center; justify-content: center; font-size: 1.8rem; border: 1px solid var(--color-border);">
+                                                    <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                                                </div>
+                                                <div>
+                                                    <span class="comp-tag"
+                                                        style="font-size:0.72rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.06em;">Formation
+                                                        Universitaire &bull; L2 IDA</span>
+                                                    <h3
+                                                        style="font-size: 1.3rem; margin: 0.2rem 0; font-family: var(--font-heading);">
+                                                        Licence en Informatique &amp; Développement d'Applications</h3>
+                                                    <p
+                                                        style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0.5rem;">
+                                                        Université Numérique Cheikh Hamidou Kane (UNCHK) &bull;
+                                                        Saint-Louis, Sénégal</p>
+                                                    <p
+                                                        style="font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary);">
+                                                        Formation axée sur le génie logiciel, le développement web,
+                                                        l'algorithmique, la modélisation de bases de données
+                                                        relationnelles et la conception d'architectures applicatives.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="complementary-grid">
+                                            <!-- Formation Linekode -->
+                                            <div class="complementary-card featured-border reveal">
+                                                <div class="comp-badge-top">
+                                                    <span class="comp-tag"><i class="fa-solid fa-star"
+                                                            aria-hidden="true"></i> Formation Pratique</span>
+                                                    <span class="comp-date"><i class="fa-regular fa-calendar"
+                                                            aria-hidden="true"></i> Linekode Academy</span>
+                                                </div>
+                                                <div class="comp-header">
+                                                    <div class="comp-icon-wrapper"><i class="fa-solid fa-laptop-code"
+                                                            aria-hidden="true"></i></div>
+                                                    <div>
+                                                        <h3 class="comp-title">Formation Linekode</h3>
+                                                        <span class="comp-provider">Linekode &bull; Développement
+                                                            d'Applications</span>
+                                                    </div>
+                                                </div>
+                                                <p class="comp-desc">
+                                                    La formation <strong>Linekode</strong> constitue une étape
+                                                    déterminante dans mon parcours. Axée sur la pratique du
+                                                    développement informatique, elle m'a permis de consolider mes acquis
+                                                    théoriques par la réalisation de projets et la maîtrise des bonnes
+                                                    pratiques du secteur.
+                                                </p>
+
+                                                <div class="comp-skills-section">
+                                                    <h4 class="comp-skills-title">Compétences développées :</h4>
+                                                    <div class="comp-skills-tags">
+                                                        <span class="skill-pill"><i class="fa-solid fa-code"
+                                                                aria-hidden="true"></i> Développement
+                                                            informatique</span>
+                                                        <span class="skill-pill"><i class="fa-solid fa-layer-group"
+                                                                aria-hidden="true"></i> Conception d'interfaces</span>
+                                                        <span class="skill-pill"><i class="fa-solid fa-bug"
+                                                                aria-hidden="true"></i> Résolution de bugs</span>
+                                                        <span class="skill-pill"><i class="fa-solid fa-terminal"
+                                                                aria-hidden="true"></i> Bonnes pratiques</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="comp-cert-box">
+                                                    <div class="cert-info">
+                                                        <i class="fa-solid fa-award cert-icon" aria-hidden="true"></i>
+                                                        <div>
+                                                            <span class="cert-title">Certificat Linekode</span>
+                                                            <span class="cert-meta">Développement Web &amp;
+                                                                Applications</span>
+                                                        </div>
+                                                    </div>
+                                                    <span class="badge-status-neutral">Certifié</span>
+                                                </div>
+                                            </div>
+
+                                            <!-- Formation Bureautique -->
+                                            <div class="complementary-card reveal reveal-delay-1">
+                                                <div class="comp-badge-top">
+                                                    <span class="comp-tag"><i class="fa-solid fa-file-lines"
+                                                            aria-hidden="true"></i> Productivité</span>
+                                                    <span class="comp-date"><i class="fa-regular fa-calendar"
+                                                            aria-hidden="true"></i> Outils Pro</span>
+                                                </div>
+                                                <div class="comp-header">
+                                                    <div class="comp-icon-wrapper"><i class="fa-solid fa-desktop"
+                                                            aria-hidden="true"></i></div>
+                                                    <div>
+                                                        <h3 class="comp-title">Formation en Bureautique</h3>
+                                                        <span class="comp-provider">Suite Office &bull; Outils
+                                                            Professionnels</span>
+                                                    </div>
+                                                </div>
+                                                <p class="comp-desc">
+                                                    Une formation approfondie dédiée aux outils bureautiques
+                                                    indispensables à la gestion documentaire, à la synthèse de données
+                                                    et à la communication d'entreprise.
+                                                </p>
+
+                                                <div class="bureautique-tools-list">
+                                                    <div class="b-tool-item">
+                                                        <div class="b-tool-icon doc"><i class="fa-solid fa-file-word"
+                                                                aria-hidden="true"></i></div>
+                                                        <div class="b-tool-info">
+                                                            <strong>Microsoft Word</strong>
+                                                            <span>Rédaction structurée, mise en page professionnelle,
+                                                                rapports techniques et mise en forme avancée.</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="b-tool-item">
+                                                        <div class="b-tool-icon sheet"><i class="fa-solid fa-file-excel"
+                                                                aria-hidden="true"></i></div>
+                                                        <div class="b-tool-info">
+                                                            <strong>Microsoft Excel</strong>
+                                                            <span>Gestion de tableaux, formules de calcul, analyse de
+                                                                données et graphiques clairs.</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="b-tool-item">
+                                                        <div class="b-tool-icon pres"><i
+                                                                class="fa-solid fa-file-powerpoint"
+                                                                aria-hidden="true"></i></div>
+                                                        <div class="b-tool-info">
+                                                            <strong>Microsoft PowerPoint</strong>
+                                                            <span>Conception de présentations visuelles percutantes,
+                                                                structuration d'idées et supports d'exposé.</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="b-tool-item">
+                                                        <div class="b-tool-icon tools"><i
+                                                                class="fa-solid fa-folder-tree" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="b-tool-info">
+                                                            <strong>Organisation Documentaire</strong>
+                                                            <span>Archivage numérique, rigueur de classement, mise en
+                                                                conformité et gestion documentaire efficace.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+
+        <!-- =========================================================================
+             10. SECTION : PROJETS
+             ========================================================================= -->
+        <section class="section-block" id="projets" aria-label="Mes projets">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Réalisations Concrètes</span>
+                    <h2 class="section-title">Mes <span class="gradient-text">Projets</span></h2>
+                    <p class="section-subtitle">
+                        Découvrez une sélection de projets représentatifs de mon parcours : de l'accompagnement
+                        d'usagers sur la plateforme Mlouma à la conception de sites web modernes.
+                    </p>
+                </div>
+
+                <div class="projects-cards-grid">
+                    <!-- Projet Vedette : RIZAO — Plateforme Mlouma -->
+                    <article class="project-featured-card reveal">
+                        <div class="featured-project-badge">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i> Projet Phare &bull; Accompagnement
+                            Terrain
+                        </div>
+                        <div class="featured-project-grid">
+                            <div class="featured-img-col">
+                                <img src="assets/images/rizao-mockup.jpg" alt="Projet RIZAO - Plateforme Mlouma"
+                                    class="featured-project-img" loading="lazy">
+                            </div>
+                            <div class="featured-content-col">
+                                <div class="project-tech-tags">
+                                    <span class="tech-tag">Plateforme Mlouma</span>
+                                    <span class="tech-tag">Projet RIZAO</span>
+                                    <span class="tech-tag">Accompagnement Usagers</span>
+                                    <span class="tech-tag">AgriTech</span>
+                                </div>
+                                <h3 class="featured-project-name">RIZAO &mdash; Plateforme Mlouma</h3>
+                                <p class="featured-project-desc">
+                                    Participation au projet RIZAO, dont l'objectif principal était de sensibiliser et
+                                    d'accompagner les producteurs agricoles dans la compréhension et l'utilisation
+                                    quotidienne de la plateforme digitale Mlouma.
+                                </p>
+                                <div class="project-role-box">
+                                    <strong><i class="fa-solid fa-user-check" aria-hidden="true"></i> Mon rôle
+                                        :</strong>
+                                    <span>Accompagnement et sensibilisation sur le terrain pour guider les usagers dans
+                                        la prise en main des fonctionnalités de la plateforme Mlouma.</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://www.mlouma.sn/auth/login" target="_blank" rel="noopener noreferrer"
+                                        class="btn btn-primary btn-sm">
+                                        <span>Voir la plateforme</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 3 Projets Web -->
+                    <div class="secondary-projects"
+                        style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
+
+                        <!-- Projet 1 : Tableware Sokhna -->
+                        <article class="project-card reveal">
+                            <div class="project-thumb-box">
+                                <img src="assets/images/tableware.jpg"
+                                    alt="Tableware Sokhna — Site de vente de vaisselle" class="project-thumb-img"
+                                    loading="lazy">
+                                <span class="project-category-badge">E-Commerce</span>
+                            </div>
+                            <div class="project-card-body">
+                                <div class="project-tech-tags">
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <h3 class="project-card-title">Tableware Sokhna</h3>
+                                <p class="project-card-desc">Site web moderne de vente en ligne de vaisselle et
+                                    d'accessoires de cuisine avec présentation élégante des articles.</p>
+                                <div class="project-role-snippet">
+                                    <strong>Présentation :</strong> Boutique en ligne avec catalogue produits et design
+                                    adaptatif.
+                                </div>
+                                <div class="project-card-footer">
+                                    <a href="https://sokhna-oss.github.io/Tableware-by-SOKHNA/" target="_blank"
+                                        rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                        <span>Voir le projet</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Projet 2 : Immobilier Web -->
+                        <article class="project-card reveal reveal-delay-1">
+                            <div class="project-thumb-box">
+                                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=700&q=80"
+                                    alt="Immobilier Web" class="project-thumb-img" loading="lazy">
+                                <span class="project-category-badge">Immobilier</span>
+                            </div>
+                            <div class="project-card-body">
+                                <div class="project-tech-tags">
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                </div>
+                                <h3 class="project-card-title">Immobilier Web</h3>
+                                <p class="project-card-desc">Site web dédié à l'immobilier permettant de présenter des
+                                    biens immobiliers de manière professionnelle et claire.</p>
+                                <div class="project-role-snippet">
+                                    <strong>Présentation :</strong> Plateforme de présentation de logements et annonces
+                                    d'exception.
+                                </div>
+                                <div class="project-card-footer">
+                                    <a href="https://mai157823.github.io/immobilier-web/" target="_blank"
+                                        rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                        <span>Voir le projet</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Projet 3 : Location de matériel événementiel -->
+                        <article class="project-card reveal reveal-delay-2">
+                            <div class="project-thumb-box">
+                                <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=700&q=80"
+                                    alt="Location de matériel événementiel" class="project-thumb-img" loading="lazy">
+                                <span class="project-category-badge">Événementiel</span>
+                            </div>
+                            <div class="project-card-body">
+                                <div class="project-tech-tags">
+                                    <span class="tech-tag">HTML5</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">Vercel</span>
+                                </div>
+                                <h3 class="project-card-title">Location de matériel événementiel</h3>
+                                <p class="project-card-desc">Site web professionnel consacré à la location de matériel
+                                    et d'équipements pour événements et réceptions.</p>
+                                <div class="project-role-snippet">
+                                    <strong>Présentation :</strong> Catalogue de réservation de matériel et prestations
+                                    événementielles.
+                                </div>
+                                <div class="project-card-footer">
+                                    <a href="https://exercice-antigravity.vercel.app/" target="_blank"
+                                        rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                        <span>Voir le projet</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a href="pages/projets.html" class="btn btn-outline">
+                        <span>Voir la galerie complète des projets</span>
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             11. SECTION : MON CV
+             ========================================================================= -->
+        <section class="section-block bg-subtle" id="cv" aria-label="Curriculum Vitae">
+            <div class="container">
+                <div class="cv-card-banner reveal">
+                    <div class="cv-banner-glow" aria-hidden="true"></div>
+                    <div class="cv-banner-grid">
+                        <div class="cv-banner-text">
+                            <span class="section-tag"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> Document
+                                Officiel</span>
+                            <h2 class="cv-banner-title">Mon Curriculum <span class="gradient-text">Vitae</span></h2>
+                            <p class="cv-banner-desc">
+                                Retrouvez l'ensemble de mon cursus universitaire en IDA à l'UNCHK, mes formations
+                                complémentaires (Linekode, bureautique), mes compétences et mes expériences de terrain
+                                dans un document structuré et à jour.
+                            </p>
+                            <div class="cv-banner-actions">
+                                <a href="assets/CV_Sokhna_Mai_Sylla.pdf" class="btn btn-primary btn-lg" target="_blank"
+                                    aria-label="Consulter mon CV">
+                                    <i class="fa-regular fa-eye" aria-hidden="true"></i>
+                                    <span>Consulter mon CV</span>
+                                </a>
+                                <a href="assets/CV_Sokhna_Mai_Sylla.pdf" class="btn btn-outline btn-lg" target="_blank"
+                                    download="CV_Sokhna_Mai_Sylla.pdf" aria-label="Télécharger mon CV en PDF">
+                                    <i class="fa-solid fa-download" aria-hidden="true"></i>
+                                    <span>Télécharger (PDF)</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cv-banner-preview-box" aria-hidden="true">
+                            <div class="cv-sheet-preview">
+                                <div class="cv-sheet-header">
+                                    <div class="cv-sheet-dot"></div>
+                                    <div class="cv-sheet-dot"></div>
+                                    <div class="cv-sheet-dot"></div>
+                                    <span class="cv-sheet-name">CV_Sokhna_Mai_Sylla.pdf</span>
+                                </div>
+                                <div class="cv-sheet-mockup-body">
+                                    <div class="mock-line title"></div>
+                                    <div class="mock-line sub"></div>
+                                    <hr class="mock-divider">
+                                    <div class="mock-row">
+                                        <div class="mock-box"></div>
+                                        <div class="mock-box"></div>
+                                    </div>
+                                    <div class="mock-line text"></div>
+                                    <div class="mock-line text short"></div>
+                                    <div class="mock-line text"></div>
+                                    <div class="mock-badge-cluster">
+                                        <span class="mock-pill"></span>
+                                        <span class="mock-pill"></span>
+                                        <span class="mock-pill"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             12. SECTION : CONTACT
+             ========================================================================= -->
+        <section class="section-block" id="contact" aria-label="Me contacter">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Échangeons</span>
+                    <h2 class="section-title">Me <span class="gradient-text">Contacter</span></h2>
+                    <p class="section-lead-quote">
+                        « Vous souhaitez échanger autour d'un projet, d'une opportunité ou de mon parcours ? N'hésitez
+                        pas à me contacter. »
+                    </p>
+                </div>
+
+                <div class="contact-layout-grid">
+                    <!-- Informations de contact -->
+                    <div class="contact-info-col">
+                        <div class="contact-card reveal">
+                            <h3 class="contact-col-title">Informations de contact</h3>
+                            <p class="contact-col-desc">
+                                Je reste disponible pour discuter de perspectives professionnelles, de stages ou de
+                                projets en développement informatique.
+                            </p>
+
+                            <div class="contact-methods-list">
+                                <div class="contact-item">
+                                    <div class="contact-item-icon"><i class="fa-regular fa-envelope"
+                                            aria-hidden="true"></i></div>
+                                    <div class="contact-item-details">
+                                        <span class="contact-item-label">Adresse Email</span>
+                                        <a href="mailto:sokhnamaimai3@gmail.com" class="contact-item-val">
+                                            sokhnamaimai3@gmail.com
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <div class="contact-item-icon"><i class="fa-brands fa-whatsapp"
+                                            aria-hidden="true"></i></div>
+                                    <div class="contact-item-details">
+                                        <span class="contact-item-label">WhatsApp / Téléphone</span>
+                                        <a href="https://wa.me/221755244683" target="_blank" rel="noopener noreferrer"
+                                            class="contact-item-val">
+                                            +221 75 524 46 83
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <div class="contact-item-icon"><i class="fa-solid fa-location-dot"
+                                            aria-hidden="true"></i></div>
+                                    <div class="contact-item-details">
+                                        <span class="contact-item-label">Localisation</span>
+                                        <span class="contact-item-val">Saint-Louis, Sénégal</span>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <div class="contact-item-icon"><i class="fa-solid fa-circle-check text-success"
+                                            aria-hidden="true"></i></div>
+                                    <div class="contact-item-details">
+                                        <span class="contact-item-label">Statut Actuel</span>
+                                        <span class="contact-item-val">Disponible pour opportunités &amp; projets
+                                            web</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 1.5rem;">
+                                <a href="https://wa.me/221755244683" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-whatsapp"
+                                    style="width: 100%; display: flex; justify-content: center; align-items: center; gap: 0.6rem; padding: 0.85rem 1.5rem; border-radius: var(--radius-md); text-decoration: none;">
+                                    <i class="fa-brands fa-whatsapp" style="font-size: 1.25rem;"></i>
+                                    <span>Me contacter sur WhatsApp</span>
+                                </a>
+                            </div>
+
+                            <div class="contact-socials-box">
+                                <h4 class="socials-box-title">Retrouvez-moi sur les réseaux :</h4>
+                                <div class="social-links-row">
+                                    <a href="https://wa.me/221755244683" target="_blank" rel="noopener noreferrer"
+                                        class="social-circle-btn" aria-label="WhatsApp de Sokhna Maï Sylla">
+                                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="mailto:sokhnamaimai3@gmail.com" class="social-circle-btn"
+                                        aria-label="Envoyer un email">
+                                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulaire de contact -->
+                    <div class="contact-form-col">
+                        <div class="contact-form-card reveal reveal-delay-1">
+                            <h3 class="contact-col-title">Envoyez-moi un message</h3>
+
+                            <form id="contactForm" class="contact-form" novalidate>
+                                <div class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></div>
+
+                                <div class="form-group">
+                                    <label for="contactName" class="form-label">Votre nom et prénom <span
+                                            class="required" aria-hidden="true">*</span></label>
+                                    <div class="input-icon-wrap">
+                                        <i class="fa-regular fa-user input-icon" aria-hidden="true"></i>
+                                        <input type="text" id="contactName" name="name" class="form-input"
+                                            placeholder="Ex: Aminata Diallo" required autocomplete="name">
+                                    </div>
+                                    <span class="field-error" id="nameError" role="alert"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactEmail" class="form-label">Votre adresse email <span
+                                            class="required" aria-hidden="true">*</span></label>
+                                    <div class="input-icon-wrap">
+                                        <i class="fa-regular fa-envelope input-icon" aria-hidden="true"></i>
+                                        <input type="email" id="contactEmail" name="email" class="form-input"
+                                            placeholder="Ex: aminata.diallo@example.com" required autocomplete="email">
+                                    </div>
+                                    <span class="field-error" id="emailError" role="alert"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactSubject" class="form-label">Objet de votre message <span
+                                            class="required" aria-hidden="true">*</span></label>
+                                    <div class="input-icon-wrap">
+                                        <i class="fa-regular fa-bookmark input-icon" aria-hidden="true"></i>
+                                        <input type="text" id="contactSubject" name="subject" class="form-input"
+                                            placeholder="Ex: Opportunité de stage / Projet web" required>
+                                    </div>
+                                    <span class="field-error" id="subjectError" role="alert"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactMessage" class="form-label">Votre message <span class="required"
+                                            aria-hidden="true">*</span></label>
+                                    <textarea id="contactMessage" name="message" class="form-textarea" rows="5"
+                                        placeholder="Décrivez votre projet, vos questions ou votre proposition..."
+                                        required></textarea>
+                                    <span class="field-error" id="messageError" role="alert"></span>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-lg w-100" id="submitBtn">
+                                    <span>Envoyer mon message</span>
+                                    <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =========================================================================
+         13. FOOTER ÉLÉGANT & MINIMALISTE
+         ========================================================================= -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-col">
+                <a href="index.html" class="footer-logo" aria-label="Accueil">
+                    <span class="brand-sms-badge"
+                        style="font-size:1.2rem;height:32px;min-width:50px;padding:0.15rem 0.6rem;">SMS</span>
+                    <span class="brand-name">SOKHNA MAÏ SYLLA</span>
+                </a>
+                <p class="footer-bio-short">
+                    Étudiante en Informatique &amp; Développement d'Applications (IDA) à l'UNCHK. Passionnée par la
+                    création de solutions web élégantes, robustes et à fort impact.
+                </p>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-col-title">Navigation</h4>
+                <ul class="footer-nav-list">
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#parcours">Mon parcours</a></li>
+                    <li><a href="#formation">Formation universitaire</a></li>
+                    <li><a href="#experiences">Mes expériences</a></li>
+                    <li><a href="#rizao">Projet RIZAO</a></li>
+                    <li><a href="#projets">Mes projets</a></li>
+                    <li><a href="#competences">Mes compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-col-title">Pages Dédiées</h4>
+                <ul class="footer-nav-list">
+                    <li><a href="pages/apropos.html">Page À propos</a></li>
+                    <li><a href="pages/formation.html">Page Formations</a></li>
+                    <li><a href="pages/projets.html">Page Projets</a></li>
+                    <li><a href="pages/competences.html">Page Compétences</a></li>
+                    <li><a href="pages/contact.html">Page Contact</a></li>
+                    <li><a href="assets/CV_Sokhna_Mai_Sylla.pdf" target="_blank"
+                            download="CV_Sokhna_Mai_Sylla.pdf">Télécharger le CV</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="container footer-bottom-inner">
+                <p class="copyright-p">
+                    &copy; 2026 <strong>Sokhna Maï Sylla</strong>. Tous droits réservés.
+                </p>
+                <div class="footer-back-to-top">
+                    <a href="#hero" class="back-to-top-btn" aria-label="Retour en haut de page">
+                        <span>Haut de page</span>
+                        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

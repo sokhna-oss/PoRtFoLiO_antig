@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Compétences | Sokhna Maï Sylla — Étudiante en Informatique & Dév</title>
+    <meta name="description"
+        content="Découvrez les compétences techniques et méthodologiques de Sokhna Maï Sylla : Développement Web (HTML, CSS, JS, Bootstrap), Informatique et Bureautique.">
+
+    <!-- Google Fonts : Playfair Display + Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar container" aria-label="Navigation principale">
+            <a href="../index.html" class="navbar-brand" aria-label="Accueil Sokhna Maï Sylla">
+                <span class="brand-badge">SMS</span>
+                <span class="brand-text">
+                    <span class="brand-name">Sokhna Maï</span>
+                    <span class="brand-sub">Informatique & Dév</span>
+                </span>
+            </a>
+
+            <div class="navbar-menu" id="navbarMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="apropos.html" class="nav-link">À propos</a></li>
+                    <li><a href="formation.html" class="nav-link">Formation</a></li>
+                    <li><a href="projets.html" class="nav-link">Projets</a></li>
+                    <li><a href="competences.html" class="nav-link active">Compétences</a></li>
+                    <li><a href="../assets/CV_Sokhna_Mai_Sylla.pdf" class="nav-link" target="_blank" download="CV_Sokhna_Mai_Sylla.pdf">CV</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-cta-mobile">
+                    <a href="../assets/CV_Sokhna_Mai_Sylla.pdf" class="btn btn-secondary btn-sm" target="_blank" download="CV_Sokhna_Mai_Sylla.pdf">
+                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                        <span>Télécharger mon CV</span>
+                    </a>
+                    <a href="contact.html" class="btn btn-primary btn-sm">
+                        <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+                        <span>Me contacter</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-actions">
+                <button type="button" class="theme-toggle-btn" id="themeToggle" aria-label="Changer le thème"
+                    title="Basculer entre mode clair et mode sombre">
+                    <i class="fa-solid fa-moon theme-icon-dark" aria-hidden="true"></i>
+                    <i class="fa-solid fa-sun theme-icon-light" aria-hidden="true"></i>
+                </button>
+
+                <a href="../assets/CV_Sokhna_Mai_Sylla.pdf" class="btn btn-secondary btn-sm nav-cv-btn"
+                    target="_blank" download="CV_Sokhna_Mai_Sylla.pdf" title="Télécharger mon CV (PDF)">
+                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                    <span>Mon CV</span>
+                </a>
+
+                <a href="contact.html" class="btn btn-primary btn-sm nav-cta-desktop">
+                    <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+                    <span>Contact</span>
+                </a>
+
+                <button type="button" class="navbar-hamburger" id="navbarToggle" aria-expanded="false"
+                    aria-controls="navbarMenu" aria-label="Ouvrir le menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- EN-TÊTE DE PAGE -->
+        <header class="page-intro-header">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <a href="../index.html">Accueil</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span>Compétences par catégories</span>
+                </div>
+                <h1 class="page-intro-title">Mes <span class="gradient-text">Compétences</span></h1>
+                <p class="page-intro-desc">
+                    Une évaluation transparente et structurée de mes aptitudes techniques, scientifiques et organisationnelles, avec des niveaux de maîtrise clairement identifiés.
+                </p>
+            </div>
+        </header>
+
+        <!-- SECTION COMPÉTENCES DÉTAILLÉES -->
+        <section class="section-block">
+            <div class="container">
+
+                <div class="competences-categories-grid">
+
+                    <!-- CATÉGORIE 1 : DÉVELOPPEMENT WEB -->
+                    <div class="comp-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-box dev">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div>
+                                <h2 class="category-title">Développement Web</h2>
+                                <p class="category-sub">Frontend &amp; Integration Réactive</p>
+                            </div>
+                        </div>
+
+                        <div class="skills-list-detailed">
+                            <!-- HTML -->
+                            <div class="skill-row">
+                                <div class="skill-info">
+                                    <div class="skill-name-col">
+                                        <i class="fa-brands fa-html5 text-orange"></i>
+                                        <strong>HTML5</strong>
+                                    </div>
+                                    <span class="skill-badge-tag">Frontend</span>
+                                </div>
+                                <p class="skill-caption">Balises sémantiques strictes, accessibilité (a11y), métadonnées SEO et formulaires modernes.</p>
+                            </div>
+
+                            <!-- CSS -->
+                            <div class="skill-row">
+                                <div class="skill-info">
+                                    <div class="skill-name-col">
+                                        <i class="fa-brands fa-css3-alt text-blue"></i>
+                                        <strong>CSS3</strong>
+                                    </div>
+                                    <span class="skill-badge-tag">Style &amp; Layout</span>
+                                </div>
+                                <p class="skill-caption">Flexbox, CSS Grid, media queries responsives, animations soignées et variables CSS personnalisées.</p>
+                            </div>
+
+                            <!-- JavaScript -->
+                            <div class="skill-row">
+                                <div class="skill-info">
+                                    <div class="skill-name-col">
+                                        <i class="fa-brands fa-js text-yellow"></i>
+                                        <strong>JavaScript</strong>
+                                    </div>
+                                    <span class="skill-badge-tag">Dynamique</span>
+                                </div>
+                                <p class="skill-caption">Manipulation du DOM, événements interactifs, logique ES6+ et programmation dynamique.</p>
+                            </div>
+
+                            <!-- Bootstrap -->
+                            <div class="skill-row">
+                                <div class="skill-info">
+                                    <div class="skill-name-col">
+                                        <i class="fa-brands fa-bootstrap" style="color:#7952b3;"></i>
+                                        <strong>Bootstrap</strong>
+                                    </div>
+                                    <span class="skill-badge-tag">Framework CSS</span>
+                                </div>
+                                <p class="skill-caption">Système de grille 12 colonnes, classes utilitaires, composants responsives et intégration rapide.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CATÉGORIE 2 : OUTILS & DÉPLOIEMENT -->
+                    <div class="comp-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-box info">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                            </div>
+                            <div>
+                                <h2 class="category-title">Outils &amp; Déploiement</h2>
+                                <p class="category-sub">Gestion de versions, CMS &amp; Hébergement</p>
+                            </div>
+                        </div>
+
+                        <div class="skills-list-detailed">
+                            <!-- GitHub -->
+                            <div class="skill-row">
+                                <div class="skill-info">
+                                    <div class="skill-name-col">
+                                        <i class="fa-brands fa-github" style="color:#111111;"></i>
+                                        <strong>GitHub</strong>
+                                    </div>
+                                    <span class="skill-badge-tag">Versioning</span>
+                                </div>
+                                <p class="skill-caption">Gestion de dépôts, versionnement Git et publication de projets.</p>
+                            </div>
+
+                            <!-- WordPress -->
+                            <div class="skill-row">
+                                <div class="skill-info">
+                                    <div class="skill-name-col">
+                                        <i class="fa-brands fa-wordpress" style="color:#21759b;"></i>
+                                        <strong>WordPress</strong>
+                                    </div>
+                                    <span class="skill-badge-tag">CMS</span>
+                                </div>
+                                <p class="skill-caption">Création, administration et personnalisation de sites web sous WordPress.</p>
+                            </div>
+
+                            <!-- Vercel -->
+                            <div class="skill-row">
+                                <div class="skill-info">
+                                    <div class="skill-name-col">
+                                        <i class="fa-solid fa-bolt" style="color:#e05688;"></i>
+                                        <strong>Vercel</strong>
+                                    </div>
+                                    <span class="skill-badge-tag">Hébergement</span>
+                                </div>
+                                <p class="skill-caption">Déploiement continu et publication d'applications web réactives.</p>
+                            </div>
+
+                            <!-- Bases de données -->
+                            <div class="skill-row">
+                                <div class="skill-info">
+                                    <div class="skill-name-col">
+                                        <i class="fa-solid fa-database" style="color:#e05688;"></i>
+                                        <strong>Bases de données &amp; SQL</strong>
+                                    </div>
+                                    <span class="skill-badge-tag">Données</span>
+                                </div>
+                                <p class="skill-caption">Modèle relationnel, schémas entité-association et requêtes SQL structurées.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CATÉGORIE 3 : INFORMATIQUE & BUREAUTIQUE -->
+                    <div class="comp-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-box office">
+                                <i class="fa-solid fa-microchip"></i>
+                            </div>
+                            <div>
+                                <h2 class="category-title">Informatique &amp; Bureautique</h2>
+                                <p class="category-sub">Fondations scientifiques &amp; Suite Office</p>
+                            </div>
+                        </div>
+
+                        <div class="skills-list-detailed">
+                            <!-- Algorithmique -->
+                            <div class="skill-row">
+                                <div class="skill-info">
+                                    <div class="skill-name-col">
+                                        <i class="fa-solid fa-brain" style="color:#e05688;"></i>
+                                        <strong>Algorithmique &amp; Logique</strong>
+                                    </div>
+                                    <span class="skill-badge-tag">Méthodologie</span>
+                                </div>
+                                <p class="skill-caption">Structures de données (tableaux, listes), tri, recherche et logique de programmation.</p>
+                            </div>
+
+                            <!-- Word -->
+                            <div class="skill-row">
+                                <div class="skill-info">
+                                    <div class="skill-name-col">
+                                        <i class="fa-solid fa-file-word text-blue"></i>
+                                        <strong>Microsoft Word</strong>
+                                    </div>
+                                    <span class="skill-badge-tag">Bureautique</span>
+                                </div>
+                                <p class="skill-caption">Rédaction formelle, chartes graphiques, gestion des en-têtes et rapports académiques.</p>
+                            </div>
+
+                            <!-- Excel -->
+                            <div class="skill-row">
+                                <div class="skill-info">
+                                    <div class="skill-name-col">
+                                        <i class="fa-solid fa-file-excel text-green"></i>
+                                        <strong>Microsoft Excel</strong>
+                                    </div>
+                                    <span class="skill-badge-tag">Bureautique</span>
+                                </div>
+                                <p class="skill-caption">Formules mathématiques/logiques, tableaux de synthèse et analyse de données.</p>
+                            </div>
+
+                            <!-- PowerPoint -->
+                            <div class="skill-row">
+                                <div class="skill-info">
+                                    <div class="skill-name-col">
+                                        <i class="fa-solid fa-file-powerpoint text-orange"></i>
+                                        <strong>Microsoft PowerPoint</strong>
+                                    </div>
+                                    <span class="skill-badge-tag">Présentation</span>
+                                </div>
+                                <p class="skill-caption">Supports de présentation dynamiques, clarté pédagogique et diapositives soignées.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-4">
+                    <a href="contact.html" class="btn btn-primary btn-lg">
+                        <i class="fa-regular fa-paper-plane"></i>
+                        <span>Proposer un projet ou un échange</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-col">
+                <a href="../index.html" class="footer-logo">
+                    <span class="brand-badge">SMS</span>
+                    <span class="brand-name">SOKHNA MAÏ SYLLA</span>
+                </a>
+                <p class="footer-bio-short">
+                    Étudiante en Informatique & Développement d’Applications (IDA) à l'UNCHK.
+                </p>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-col-title">Navigation</h4>
+                <ul class="footer-nav-list">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="formation.html">Formation universitaire</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-col-title">Documents</h4>
+                <ul class="footer-nav-list">
+                    <li><a href="../assets/CV_Sokhna_Mai_Sylla.pdf" target="_blank" download="CV_Sokhna_Mai_Sylla.pdf">Télécharger mon CV</a></li>
+                    <li><a href="contact.html">Formulaire de contact</a></li>
+                    <li><a href="mailto:sokhnamai.sylla@unchk.edu.sn">sokhnamai.sylla@unchk.edu.sn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="container footer-bottom-inner">
+                <p class="copyright-p">&copy; 2026 <strong>Sokhna Maï Sylla</strong>. Tous droits réservés.</p>
+                <div class="footer-back-to-top">
+                    <a href="#main-content" class="back-to-top-btn"><i class="fa-solid fa-arrow-up"></i> Haut de page</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js" defer></script>
+</body>
+
+</html>
