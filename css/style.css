@@ -2237,25 +2237,67 @@ h6 {
 /* --------------------------------------------------------------------------
    17. PROJETS
    -------------------------------------------------------------------------- */
-.projects-cards-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+/* Barre de Filtres Interactifs (page projets) */
+.project-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
 }
 
+.filter-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1.15rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    font-family: var(--font-body);
+    color: var(--text-secondary);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    white-space: nowrap;
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+.filter-chip:hover {
+    color: var(--color-forest);
+    border-color: var(--color-forest);
+    background: var(--color-forest-pale);
+}
+
+.filter-chip.active {
+    color: #fff;
+    background: var(--color-forest);
+    border-color: var(--color-forest);
+    box-shadow: 0 2px 8px rgba(15, 61, 46, 0.25);
+}
+
+/* Grille principale des projets (Desktop : 3 colonnes) */
+.projects-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+}
+
+/* Carte Projet Vedette (occupe toute la largeur de la grille) */
 .project-featured-card {
+    grid-column: 1 / -1;
     background: var(--color-bg-card);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-xl);
     overflow: hidden;
     box-shadow: var(--shadow-card);
     position: relative;
-    transition: all var(--transition-base);
-}
-
-.project-featured-card:hover {
-    border-color: var(--color-border-hover);
-    box-shadow: var(--shadow-hover);
+    transition: border-color var(--transition-base), box-shadow var(--transition-base);
+    width: 100%;
 }
 
 .featured-project-badge {
@@ -2269,7 +2311,7 @@ h6 {
     background: var(--color-forest);
     padding: 0.3rem 0.85rem;
     border-radius: var(--radius-full);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 0.35rem;
     letter-spacing: 0.04em;
@@ -2278,10 +2320,13 @@ h6 {
 .featured-project-grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
+    width: 100%;
 }
 
 .featured-img-col {
     overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
 .featured-project-img {
@@ -2289,12 +2334,9 @@ h6 {
     height: 100%;
     min-height: 280px;
     object-fit: cover;
+    object-position: center;
     transition: transform var(--transition-smooth);
     display: block;
-}
-
-.project-featured-card:hover .featured-project-img {
-    transform: scale(1.04);
 }
 
 .featured-content-col {
@@ -2319,6 +2361,7 @@ h6 {
     border: 1px solid var(--color-border);
     padding: 0.18rem 0.6rem;
     border-radius: var(--radius-full);
+    white-space: nowrap;
 }
 
 .featured-project-name {
@@ -2352,20 +2395,23 @@ h6 {
 
 .project-role-box strong {
     color: var(--text-primary);
-    white-space: nowrap;
 }
 
 .project-buttons {
     display: flex;
     gap: 0.75rem;
     flex-wrap: wrap;
+    align-items: center;
 }
 
-/* Cartes projets secondaires */
-.projects-cards-grid .secondary-projects {
+/* Cartes projets secondaires (Desktop : 3 colonnes) */
+.projects-cards-grid .secondary-projects,
+.secondary-projects {
+    grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    width: 100%;
 }
 
 .project-card {
@@ -2374,31 +2420,28 @@ h6 {
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-xs);
-    transition: all var(--transition-base);
-}
-
-.project-card:hover {
-    border-color: var(--color-border-hover);
-    box-shadow: var(--shadow-card);
-    transform: translateY(-3px);
+    transition: border-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 .project-thumb-box {
     position: relative;
     overflow: hidden;
     height: 180px;
+    width: 100%;
+    background: var(--color-bg-subtle);
 }
 
 .project-thumb-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     transition: transform var(--transition-smooth);
     display: block;
-}
-
-.project-card:hover .project-thumb-img {
-    transform: scale(1.06);
 }
 
 .project-category-badge {
@@ -2412,10 +2455,14 @@ h6 {
     padding: 0.2rem 0.6rem;
     border-radius: var(--radius-full);
     backdrop-filter: blur(4px);
+    z-index: 2;
 }
 
 .project-card-body {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .project-card-title {
@@ -2423,6 +2470,7 @@ h6 {
     font-weight: 700;
     color: var(--text-primary);
     margin: 0.5rem 0 0.5rem;
+    line-height: 1.35;
 }
 
 .project-card-desc {
@@ -2430,6 +2478,7 @@ h6 {
     color: var(--text-muted);
     line-height: 1.7;
     margin-bottom: 0.85rem;
+    flex-grow: 1;
 }
 
 .project-role-snippet {
@@ -2452,6 +2501,29 @@ h6 {
     gap: 0.5rem;
     padding-top: 0.75rem;
     border-top: 1px solid var(--color-border);
+    margin-top: auto;
+}
+
+/* Effets de survol réservés aux appareils avec curseur précis */
+@media (hover: hover) and (pointer: fine) {
+    .project-featured-card:hover {
+        border-color: var(--color-border-hover);
+        box-shadow: var(--shadow-hover);
+    }
+
+    .project-featured-card:hover .featured-project-img {
+        transform: scale(1.03);
+    }
+
+    .project-card:hover {
+        border-color: var(--color-border-hover);
+        box-shadow: var(--shadow-card);
+        transform: translateY(-3px);
+    }
+
+    .project-card:hover .project-thumb-img {
+        transform: scale(1.05);
+    }
 }
 
 /* --------------------------------------------------------------------------
@@ -3211,16 +3283,46 @@ a.contact-item-val:hover {
         border-bottom: 1px solid var(--color-border);
     }
 
+    /* Projets sur Tablette — 2 colonnes harmonieuses */
     .featured-project-grid {
         grid-template-columns: 1fr;
     }
 
     .featured-img-col {
-        height: 220px;
+        width: 100%;
+        height: auto;
+        position: relative;
     }
 
     .featured-project-img {
-        min-height: 220px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        min-height: unset;
+        max-height: 320px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .featured-content-col {
+        padding: 1.75rem 2rem;
+    }
+
+    .projects-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .projects-cards-grid .secondary-projects,
+    .secondary-projects {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .project-thumb-box {
+        height: auto;
+        aspect-ratio: 16 / 10;
+        min-height: 170px;
     }
 
     .contact-layout-grid {
@@ -3340,6 +3442,202 @@ a.contact-item-val:hover {
     .footer-bottom-inner {
         flex-direction: column;
         text-align: center;
+    }
+
+    /* Projets sur Téléphone — 1 carte par ligne, responsive fluide */
+    .project-filter-bar {
+        gap: 0.45rem;
+        margin-bottom: 1.5rem;
+        padding: 0;
+    }
+
+    .filter-chip {
+        padding: 0.42rem 0.85rem;
+        font-size: 0.78rem;
+    }
+
+    .projects-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .projects-cards-grid .secondary-projects,
+    .secondary-projects {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .project-featured-card {
+        border-radius: var(--radius-lg);
+    }
+
+    .featured-project-badge {
+        top: 0.85rem;
+        left: 0.85rem;
+        font-size: 0.68rem;
+        padding: 0.28rem 0.7rem;
+        max-width: calc(100% - 1.7rem);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .featured-img-col {
+        width: 100%;
+        height: auto;
+    }
+
+    .featured-project-img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        min-height: unset;
+        max-height: 240px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .featured-content-col {
+        padding: 1.4rem 1.15rem;
+    }
+
+    .featured-project-name {
+        font-size: 1.15rem;
+        line-height: 1.35;
+        margin-bottom: 0.6rem;
+    }
+
+    .featured-project-desc {
+        font-size: 0.86rem;
+        line-height: 1.65;
+        margin-bottom: 1rem;
+    }
+
+    .project-role-box {
+        padding: 0.75rem 0.85rem;
+        font-size: 0.8rem;
+        gap: 0.35rem;
+        margin-bottom: 1.25rem;
+        line-height: 1.55;
+    }
+
+    .project-role-box strong {
+        white-space: normal;
+    }
+
+    .project-buttons {
+        gap: 0.6rem;
+    }
+
+    .project-card {
+        border-radius: var(--radius-md);
+    }
+
+    .project-thumb-box {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 10;
+        min-height: 160px;
+        max-height: 220px;
+    }
+
+    .project-card-body {
+        padding: 1.25rem 1.1rem;
+    }
+
+    .project-card-title {
+        font-size: 0.98rem;
+        margin: 0.4rem 0 0.45rem;
+        line-height: 1.35;
+    }
+
+    .project-card-desc {
+        font-size: 0.82rem;
+        line-height: 1.6;
+        margin-bottom: 0.75rem;
+    }
+
+    .project-role-snippet {
+        font-size: 0.76rem;
+        padding: 0.45rem 0.65rem;
+        margin-bottom: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .tech-tag {
+        font-size: 0.68rem;
+        padding: 0.16rem 0.5rem;
+    }
+
+    .project-card-footer {
+        padding-top: 0.75rem;
+    }
+
+    .project-buttons .btn,
+    .project-card-footer .btn {
+        min-height: 42px;
+        font-size: 0.82rem;
+        padding: 0.5rem 1rem;
+    }
+
+}
+
+
+/* --------------------------------------------------------------------------
+   24b. RESPONSIVE — PETITS MOBILES (≤ 390px et ≤ 330px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 390px) {
+    .featured-content-col {
+        padding: 1.2rem 0.95rem;
+    }
+
+    .featured-project-badge {
+        font-size: 0.64rem;
+        padding: 0.24rem 0.6rem;
+        top: 0.75rem;
+        left: 0.75rem;
+    }
+
+    .featured-project-name {
+        font-size: 1.08rem;
+    }
+
+    .project-card-body {
+        padding: 1.1rem 0.9rem;
+    }
+
+    .project-card-footer .btn,
+    .project-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .filter-chip {
+        padding: 0.38rem 0.75rem;
+        font-size: 0.74rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .featured-content-col {
+        padding: 1.1rem 0.75rem;
+    }
+
+    .project-card-body {
+        padding: 0.95rem 0.75rem;
+    }
+
+    .featured-project-name {
+        font-size: 1rem;
+    }
+
+    .project-card-title {
+        font-size: 0.92rem;
+    }
+
+    .filter-chip {
+        padding: 0.34rem 0.65rem;
+        font-size: 0.7rem;
     }
 }
 
